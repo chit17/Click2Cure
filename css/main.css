@@ -1,0 +1,121 @@
+@import url('font-inter.css');
+:root {
+  --primarycolor: #6A64F1;
+  --primarycolorhover: #5A54E1;
+  --btnice: #DAD7FF;
+  --btnnicetext: #4C46C6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/*------custom-scroll-bar - from w3schools.com------------------*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.input-text {
+  border-radius: 4px;
+  border: 0.5px solid #E2E2E2;
+  padding: 10px;
+  width: 92%;
+  transition: 0.2s;
+  outline: none;
+}
+
+.input-text {
+  border: 1px solid #E9ECEF;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #FFF;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.input-text:hover {
+  background-color: #FAFAFA;
+  transition: 0.2s;
+  outline: none;
+}
+
+.input-text:focus {
+  border: 1px solid #6A64F1;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--primarycolor);
+  border: 1px solid var(--primarycolor);
+  color: #FFF;
+  box-shadow: 0 3px 5px 0 rgba(106, 100, 241, 0.3);
+}
+
+.btn-primary-soft {
+  background-color: #DAD7FF;
+  color: #4C46C6;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+}
+
+.btn-primary-soft:hover {
+  background-color: var(--primarycolor);
+  color: #FFF;
+  box-shadow: 0 3px 5px 0 rgba(106, 100, 241, 0.3);
+}
+
+.btn-label {
+  margin-left: 10px;
+  padding: 12px 12px;
+  background-color: #E0E0FF;
+  border: 1px solid rgba(106, 100, 241, 0.04);
+}
+
+.btn-primary-gray {
+  background-color: #FFF;
+  border: 2px solid rgba(201, 203, 206, 0.62);
+  color: rgba(33, 37, 41, 0.82);
+  box-shadow: 0 3px 5px 0 rgba(95, 95, 97, 0.3);
+}
+
+.btn-primary-gray:hover {
+  background-color: #847BFF;
+  box-shadow: 0 3px 5px 0 rgba(95, 95, 97, 0.3);
+}
+
+.dashboard-items {
+  border: 2px solid rgba(201, 203, 206, 0.62);
+  border-radius: 7px;
+  color: var(--primarycolor);
+}
