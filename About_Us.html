@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Click2Cure</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .bg-slideshow {
+            background-image: url('img/bg-img/bg1.jpeg');
+            /* Set your one image here */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* No animation needed */
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #6A64F1, #9D4DFB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .text-shadow-md {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+
+<body class="bg-slideshow bg-fixed text-white">
+
+    <!-- Wrapper -->
+    <div class="min-h-screen flex flex-col justify-between">
+
+        <!-- Navbar -->
+        <nav class="w-full py-4 px-4 sm:px-8 glassmorphism fixed top-0 left-0 right-0 z-10">
+            <div class="flex flex-col sm:flex-row items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-3xl font-bold gradient-text text-shadow-md">Click2Cure</span>
+                    <span
+                        class="hidden sm:inline-block text-xs bg-gradient-to-r from-purple-500 to-blue-400 text-white px-2 py-1 rounded-full animate-pulse">
+                        FAST TRACK HEALTHCARE
+                    </span>
+                </a>
+                <div class="flex flex-wrap gap-3 mt-4 sm:mt-0 justify-center">
+                    <a href="index2.html">
+                        <button
+                            class="bg-[#6A64F1] text-white text-sm sm:text-base px-5 py-2 rounded-3xl font-medium transition-all duration-300 transform shadow-md hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:shadow-xl hover:scale-105">
+                            CONTACT US
+                        </button>
+                    </a>
+                    <a href="login.php">
+                        <button
+                            class="bg-[#6A64F1] text-white text-sm sm:text-base px-5 py-2 rounded-3xl font-medium transition-all duration-300 transform shadow-md hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:shadow-xl hover:scale-105">
+                            LOGIN
+                        </button>
+                    </a>
+                    <a href="signup.php">
+                        <button
+                            class="bg-[#6A64F1] text-white text-sm sm:text-base px-5 py-2 rounded-3xl font-medium transition-all duration-300 transform shadow-md hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:shadow-xl hover:scale-105">
+                            REGISTER
+                        </button>
+                    </a>
+                    <a href="About_Us.html">
+                        <button
+                            class="bg-[#6A64F1] text-white text-sm sm:text-base px-5 py-2 rounded-3xl font-medium transition-all duration-300 transform shadow-md hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:shadow-xl hover:scale-105">
+                            ABOUT US
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main
+            class="container mx-auto max-w-5xl glassmorphism rounded-lg shadow-xl overflow-hidden fade-in mt-36 p-6 sm:p-10 flex-grow">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="img/doc1.jpg" alt="Image 1"
+                        class="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="img/doc2.jpg" alt="Image 2"
+                        class="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="img/doc3.jpg" alt="Image 3"
+                        class="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="img/doc4.avif" alt="Image 4"
+                        class="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="space-y-6 text-shadow-md">
+                    <h2 class="text-3xl sm:text-4xl font-bold gradient-text border-l-4 border-purple-600 pl-4">About
+                        Click2Cure</h2>
+                    <p class="text-base sm:text-lg text-gray-200 leading-relaxed">
+                        At Click2Cure, we're revolutionizing healthcare by connecting patients with qualified medical
+                        professionals instantly. Our platform is designed to provide seamless, efficient, and reliable
+                        access to healthcare services, ensuring you get the care you need, when you need it.
+                    </p>
+                    <p class="text-base sm:text-lg text-gray-200 leading-relaxed">
+                        Our team is committed to innovation and excellence, continuously working to enhance our services
+                        and expand our network of healthcare providers.
+                    </p>
+                    <div class="glassmorphism p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-4 gradient-text">Contact Us</h3>
+                        <p class="text-sm sm:text-base text-gray-300 mb-2"><strong>Phone:</strong> +1 (555) 123-4567</p>
+                        <p class="text-sm sm:text-base text-gray-300 mb-2"><strong>Email:</strong>
+                            support@click2cure.com</p>
+                        <p class="text-sm sm:text-base text-gray-300"><strong>Address:</strong> 123 Health Street,
+                            Medical City</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Gap between Navigation and Text-to-Button Section -->
+        <div class="mt-10 sm:mt-20"></div>
+
+        <!-- Footer -->
+        <footer class="w-full glassmorphism px-4 sm:px-8 py-10 border-t border-white/10">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="space-y-4">
+                        <span class="text-2xl font-bold gradient-text text-shadow-md">Click2Cure</span>
+                        <p class="text-white/70 text-sm">Your trusted digital healthcare platform connecting you with
+                            medical professionals instantly.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-semibold text-lg mb-3">Quick Links</h3>
+                        <ul class="space-y-2 text-white/70 text-sm">
+                            <li><a href="index.html" class="hover:text-white">Home</a></li>
+                            <li><a href="About_Us.html" class="hover:text-white">About Us</a></li>
+                            <li><a href="index2.html" class="hover:text-white">Contact</a></li>
+                            <li><a href="login.php" class="hover:text-white">Login</a></li>
+                            <li><a href="signup.php" class="hover:text-white">Register</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-semibold text-lg mb-3">Services</h3>
+                        <ul class="space-y-2 text-white/70 text-sm">
+                            <li><a href="#" class="hover:text-white">Instant Consultations</a></li>
+                            <li><a href="#" class="hover:text-white">Doctor Appointments</a></li>
+                            <li><a href="#" class="hover:text-white">E-Prescriptions</a></li>
+                            <li><a href="#" class="hover:text-white">Health Records</a></li>
+                            <li><a href="#" class="hover:text-white">24/7 Support</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-semibold text-lg mb-3">Contact Us</h3>
+                        <ul class="space-y-2 text-white/70 text-sm">
+                            <li>123 Health Street, Medical City</li>
+                            <li>+1 (555) 123-4567</li>
+                            <li>support@click2cure.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center text-white/50 text-sm mt-10 pt-6 border-t border-white/10">
+                    © 2025 Click2Cure. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
